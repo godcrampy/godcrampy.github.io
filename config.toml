@@ -1,0 +1,52 @@
+baseURL = "http://example.org/"
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "en"
+# language code
+languageCode = "en"
+title = "Sahil Bondre"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "FeelIt"
+
+[params]
+# FeelIt theme version
+
+defaultTheme = "dark"
+description = "Personal Blog"
+version = "1.0.X"
+
+[menu]
+[[menu.main]]
+identifier = "posts"
+# you can add extra information before the name (HTML format is supported), such as icons
+pre = ""
+# you can add extra information after the name (HTML format is supported), such as icons
+name = "Posts"
+post = ""
+url = "/posts/"
+# title will be shown when you hover on this menu link
+title = ""
+weight = 1
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+post = ""
+pre = ""
+title = ""
+url = "/tags/"
+weight = 2
+[[menu.main]]
+identifier = "categories"
+name = "Categories"
+post = ""
+pre = ""
+title = ""
+url = "/categories/"
+weight = 3
+
+# Markup related configuration in Hugo
+[markup]
+# Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+[markup.highlight]
+# false is a necessary configuration (https://github.com/khusika/FeelIt/issues/158)
+noClasses = false
