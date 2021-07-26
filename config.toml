@@ -1,0 +1,55 @@
+baseURL = "https://sahil.surge.sh/"
+defaultContentLanguage = "en"
+hasCJKLanguage = true
+languageCode = "en"
+paginate = 5
+theme = "hugo-theme-texify"
+title = "Sahil Bondre"
+
+disqusShortname = ""
+googleAnalytics = ""
+pygmentsUseClasses = true
+
+[author]
+name = "Sahil Bondre"
+
+[markup]
+defaultMarkdownHandler = "goldmark"
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[[menu.main]]
+identifier = "post"
+name = "Home"
+url = "/"
+weight = 1
+[[menu.main]]
+identifier = "archives"
+name = "Archives"
+url = "/post/"
+weight = 2
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 3
+
+[params]
+customCSS = []
+dateFormat = "2006-01-02"
+description = "Personal Website of Sahil Bondre"
+enableFullRSS = true
+enableHanEmph = true
+enableMathjax = true
+favicon = "/favicon.ico"
+footnote = "<a class=link href=https://github.com/godcrampy>GitHub</a> | <a class=link href=https://twitter.com/godcrampy>Twitter</a> | <a class=link href=https://www.linkedin.com/in/sahil-bondre/>Linkedin</a> | <a class=link href=mailto:sahilbondre@gmail.com>Email</a>"
+keywords = ["developer", "blog", "personal blog"]
+
+# see https://utteranc.es for installation guide
+[params.utterances]
+enable = false
+issue_term = "pathname"
+label = "Comment"
+repo = ""
+theme = "github-light"
