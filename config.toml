@@ -7,8 +7,9 @@ theme = "hugo-theme-texify"
 title = "Sahil Bondre"
 
 disqusShortname = ""
-googleAnalytics = ""
+googleAnalytics = "UA-160443909-1"
 pygmentsUseClasses = true
+enableRobotsTXT = true
 
 [author]
 name = "Sahil Bondre"
