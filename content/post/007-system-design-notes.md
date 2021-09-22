@@ -4,6 +4,7 @@ title = "System Design Notes"
 date = "2020-08-21"
 description = "The Missing Shell Scripting Crash Course"
 tags = ["tutorial", "design"]
+draft = true
 +++
 
 ## Tiers of Software Architecture
