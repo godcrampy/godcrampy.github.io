@@ -22,8 +22,8 @@ test("landing on a bad page", () => {
   expect(screen.getByText(/Error: Page not found/i)).toBeInTheDocument();
 });
 
-test("landing on a blog page", () => {
-  const route = "/blog/00-test";
+test("landing on a essay page", () => {
+  const route = "/essay/00-test";
 
   render(
     <MemoryRouter initialEntries={[route]}>
@@ -31,5 +31,5 @@ test("landing on a blog page", () => {
     </MemoryRouter>
   );
 
-  expect(screen.getByTestId("blog")).toBeInTheDocument();
+  expect(screen.getByTestId("essay")).toBeInTheDocument();
 });

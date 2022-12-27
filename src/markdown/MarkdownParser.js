@@ -1,16 +1,16 @@
-import index from "../blog/index.json";
+import index from "../essay/index.json";
 import MarkdownIt from "markdown-it";
 import hljs from "highlight.js";
 
 class MarkdownParser {
   async #getMarkdownContent(markdownFilePath) {
-    const blogConfig = index.find((e) => e.location === markdownFilePath);
+    const essayConfig = index.find((e) => e.location === markdownFilePath);
 
-    if (blogConfig === undefined) {
-      throw "Error: cannot find blog config";
+    if (essayConfig === undefined) {
+      throw "Error: cannot find essay config";
     }
 
-    const filePath = await require(`../${blogConfig.location}/index.md`);
+    const filePath = await require(`../${essayConfig.location}/index.md`);
     const file = await fetch(filePath);
     return await file.text();
   }

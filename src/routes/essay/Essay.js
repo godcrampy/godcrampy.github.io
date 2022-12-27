@@ -1,10 +1,10 @@
-import index from "src/blog/index.json";
-import { useEffect, useRef, useState } from "react";
+import index from "src/essay/index.json";
+import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import MarkdownParser from "../../markdown/MarkdownParser";
 import hljs from "highlight.js";
 
-function Blog() {
+function Essay() {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -36,7 +36,7 @@ function Blog() {
   });
 
   return (
-    <div data-testid="blog" className="Blog">
+    <div data-testid="essay" className="Essay">
       <h1>{config.title}</h1>
       <p className="author">
         {config.author} <br /> {config.date}
@@ -50,4 +50,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default Essay;
