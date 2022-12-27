@@ -1,5 +1,9 @@
 [
   {
-    "location": "blog/00-test"
+    "location": "blog/00-test",
+    "author": "Sahil Bondre",
+    "date": "Week 52, 27th December 2022",
+    "title": "Heading: Lorem Ipsum",
+    "abstract": "Test essay to highlight and check supported markdown features."
   }
 ]

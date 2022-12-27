@@ -1,6 +1,4 @@
-# h1 Heading 8-)
-
-## Index
+## Table of Contents
 [[toc]]
 
 ## h2 Heading

@@ -9,17 +9,20 @@ function Blog() {
   const location = useLocation();
 
   const [data, updateData] = useState("");
+  const [config, updateConfig] = useState({});
 
   useEffect(() => {
     hljs.highlightAll();
     const path = location.pathname.slice(1);
-    if (index.filter((e) => e.location === path).length !== 1) {
+    const config = index.find((e) => e.location === path);
+    if (config === undefined) {
       navigate("/error");
     } else {
       const parser = new MarkdownParser();
       parser.getHtmlFromMarkdown(path).then((res) => {
         updateData(res);
       });
+      updateConfig(config);
     }
   }, []);
 
@@ -34,6 +37,14 @@ function Blog() {
 
   return (
     <div data-testid="blog" className="Blog">
+      <h1>{config.title}</h1>
+      <p className="author">
+        {config.author} <br /> {config.date}
+      </p>
+      <div className="abstract">
+        <h2>Abstract</h2>
+        <p>{config.abstract}</p>
+      </div>
       <div dangerouslySetInnerHTML={{ __html: data }}></div>
     </div>
   );
