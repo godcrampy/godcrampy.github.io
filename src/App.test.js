@@ -6,6 +6,7 @@ test("renders abstract section", () => {
   render(<App />, { wrapper: BrowserRouter });
   const abstractElement = screen.getByTestId("abstract");
   expect(abstractElement).toBeInTheDocument();
+  expect(screen.getByTestId("home")).toBeInTheDocument();
 });
 
 test("landing on a bad page", () => {
@@ -22,13 +23,13 @@ test("landing on a bad page", () => {
 });
 
 test("landing on a blog page", () => {
-  const badRoute = "/blog/abc123";
+  const route = "/blog/00-test";
 
   render(
-    <MemoryRouter initialEntries={[badRoute]}>
+    <MemoryRouter initialEntries={[route]}>
       <App />
     </MemoryRouter>
   );
 
-  expect(screen.getByText(/Welcome to Blog abc123/i)).toBeInTheDocument();
+  expect(screen.getByTestId("blog")).toBeInTheDocument();
 });

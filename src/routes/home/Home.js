@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <div className="Home">
+    <div data-testid="home" className="Home">
       <h1>Sahil Bondre</h1>
       <p className="author">Software Engineer</p>
       <div data-testid="abstract" className="abstract">
