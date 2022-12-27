@@ -1,3 +1,7 @@
 .left {
     text-align: left;
 }
+
+code {
+    zoom: 0.85;
+}
