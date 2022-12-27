@@ -24,7 +24,10 @@ class MarkdownParser {
       inline: true,
     });
     parser.use(require("markdown-it-anchor").default);
-    parser.use(require("markdown-it-table-of-contents"));
+    parser.use(require("markdown-it-table-of-contents"), {
+      listType: "ol",
+      includeLevel: [1, 2, 3],
+    });
     parser.use(require("markdown-it-footnote"));
     parser.use(require("markdown-it-sub"));
     parser.use(require("markdown-it-sup"));

@@ -5,3 +5,24 @@
 pre {
   padding: 0 !important;
 }
+
+nav li:before {
+  content: counters(item, ".") ".";
+  counter-increment: item;
+  padding-right: 0.85rem;
+}
+
+.table-of-contents li:before {
+  content: counters(item, ".") ".";
+  counter-increment: item;
+  padding-right: 0.85rem;
+}
+
+.table-of-contents ol {
+  counter-reset: item;
+  padding-left: 2rem;
+}
+
+.table-of-contents li {
+  display: block;
+}
