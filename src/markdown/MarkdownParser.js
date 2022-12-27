@@ -1,26 +1,34 @@
 import index from "../blog/index.json";
-import { marked } from "marked";
+import MarkdownIt from "markdown-it";
+import hljs from "highlight.js";
 
 class MarkdownParser {
-  constructor(options) {
-    this.options = options;
-  }
-
-  async #getMarkdown(markdownFilePath) {
+  async #getMarkdownContent(markdownFilePath) {
     const blogConfig = index.find((e) => e.location === markdownFilePath);
 
     if (blogConfig === undefined) {
       throw "Error: cannot find blog config";
     }
 
-    return await require(`../${blogConfig.location}/index.md`);
+    const filePath = await require(`../${blogConfig.location}/index.md`);
+    const file = await fetch(filePath);
+    return await file.text();
   }
 
   async getHtmlFromMarkdown(pathname) {
-    const filePath = await this.#getMarkdown(pathname);
-    const file = await fetch(filePath);
-    const text = await file.text();
-    return marked.parse(text, this.options);
+    const text = await this.#getMarkdownContent(pathname);
+    const parser = new MarkdownIt({ typographer: true, linkify: true });
+    parser.use(require("markdown-it-highlightjs"), {
+      hljs,
+      auto: false,
+      inline: true,
+    });
+    parser.use(require("markdown-it-anchor").default);
+    parser.use(require("markdown-it-table-of-contents"));
+    parser.use(require("markdown-it-footnote"));
+    parser.use(require("markdown-it-sub"));
+    parser.use(require("markdown-it-sup"));
+    return parser.render(text);
   }
 }
 

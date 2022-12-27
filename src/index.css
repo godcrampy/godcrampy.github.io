@@ -2,6 +2,6 @@
     text-align: left;
 }
 
-code {
-    zoom: 0.85;
+pre {
+    padding: 0 !important;
 }

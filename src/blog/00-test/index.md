@@ -1,4 +1,8 @@
 # h1 Heading 8-)
+
+## Index
+[[toc]]
+
 ## h2 Heading
 ### h3 Heading
 #### h4 Heading

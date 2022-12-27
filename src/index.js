@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "latex.css/style.css";
-import "prismjs/themes/prism.css";
+import "highlight.js/styles/github.css";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
