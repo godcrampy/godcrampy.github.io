@@ -41,10 +41,14 @@ function Essay() {
       <p className="author">
         {config.author} <br /> {config.date}
       </p>
-      <div className="abstract">
-        <h2>Abstract</h2>
-        <p>{config.abstract}</p>
-      </div>
+      {config.abstract && config.abstract.length > 0 && (
+        <div className="abstract">
+          <h2>Abstract</h2>
+          <p>{config.abstract}</p>
+        </div>
+      )}
+
+      <h2>Table of Contents</h2>
       <div dangerouslySetInnerHTML={{ __html: data }}></div>
     </div>
   );

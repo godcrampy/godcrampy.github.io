@@ -23,7 +23,7 @@ test("landing on a bad page", () => {
 });
 
 test("landing on a essay page", () => {
-  const route = "/essay/00-test";
+  const route = "/essay/000-test";
 
   render(
     <MemoryRouter initialEntries={[route]}>

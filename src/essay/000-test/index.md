@@ -1,5 +1,3 @@
-## Table of Contents
-
 [[toc]]
 
 ## h2 Heading
