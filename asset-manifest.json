@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b7d3f385.css",
-    "main.js": "/static/js/main.84fdb12e.js",
+    "main.js": "/static/js/main.d28f80aa.js",
     "static/media/Libertinus-semibold-italic.woff2": "/static/media/Libertinus-semibold-italic.02bb0b08425a842da81e.woff2",
     "static/media/Libertinus-italic.woff2": "/static/media/Libertinus-italic.14b5589e45197c291768.woff2",
     "static/media/LM-italic.ttf": "/static/media/LM-italic.c0c56f0dddca5dd537ac.ttf",
@@ -20,13 +20,13 @@
     "static/media/LM-italic.woff2": "/static/media/LM-italic.af06a120815d8ea7ee8c.woff2",
     "static/media/LM-regular.woff2": "/static/media/LM-regular.fecdf157fc036b7f93a4.woff2",
     "static/media/LM-bold.woff2": "/static/media/LM-bold.fe6484d55336977fade5.woff2",
-    "static/media/index.md": "/static/media/index.1e89ece086d076526f66.md",
+    "static/media/index.md": "/static/media/index.9efef024c7c974ccd3a8.md",
     "index.html": "/index.html",
     "main.b7d3f385.css.map": "/static/css/main.b7d3f385.css.map",
-    "main.84fdb12e.js.map": "/static/js/main.84fdb12e.js.map"
+    "main.d28f80aa.js.map": "/static/js/main.d28f80aa.js.map"
   },
   "entrypoints": [
     "static/css/main.b7d3f385.css",
-    "static/js/main.84fdb12e.js"
+    "static/js/main.d28f80aa.js"
   ]
 }
