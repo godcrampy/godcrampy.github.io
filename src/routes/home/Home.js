@@ -1,4 +1,13 @@
+import { useEffect, useState } from "react";
+import essayConfigJson from "../../essay/index.json";
+
 function Home() {
+  const [essayConfigs, updateEssayConfigs] = useState([]);
+
+  useEffect(() => {
+    updateEssayConfigs([...essayConfigJson].reverse().slice(0, 10));
+  }, []);
+
   return (
     <div data-testid="home" className="Home">
       <h1>Sahil Bondre</h1>
@@ -60,76 +69,15 @@ function Home() {
       </nav>
 
       <nav role="navigation" className="toc">
-        <h2>Essays</h2>
+        <h2>Recent Essays</h2>
         <ol>
-          <li>
-            <a href="src/index#getting-started">Getting Started</a>
-          </li>
-          <li>
-            <a href="src/index#class-based-elements">Class-based Elements</a>
-            <ol>
-              <li>
-                <a href="src/index#author-abstract">Author and Abstract</a>
+          {essayConfigs.map((essayConfig) => {
+            return (
+              <li key={essayConfig.title}>
+                <a href={essayConfig.location}>{essayConfig.title}</a>
               </li>
-              <li>
-                <a href="src/index#tdpl">Theorems, Definitions and Proofs</a>
-                <ol>
-                  <li>
-                    <a href="src/index#proofs-theorems">Proofs & Theorems</a>
-                  </li>
-                  <li>
-                    <a href="src/index#lemmas">Lemmas</a>
-                  </li>
-                  <li>
-                    <a href="src/index#definitions">Definitions</a>
-                  </li>
-                </ol>
-              </li>
-            </ol>
-          </li>
-          <li>
-            <a href="src/index#language-support">Language Support</a>
-          </li>
-          <li>
-            <a href="src/index#sidenotes">Sidenotes</a>
-          </li>
-          <li>
-            <a href="src/index#dark-mode">Dark Mode</a>
-          </li>
-          <li>
-            <a href="src/index#alternative-typeface">Alternative Typeface</a>
-          </li>
-          <li>
-            <a href="src/index#html-elements">HTML Elements</a>
-            <ol>
-              <li>
-                <a href="src/index#text-formatting">Text Formatting</a>
-              </li>
-              <li>
-                <a href="src/index#blockquotes">Blockquotes</a>
-              </li>
-              <li>
-                <a href="src/index#definition-lists">Definition Lists</a>
-              </li>
-              <li>
-                <a href="src/index#tables">Tables</a>
-              </li>
-              <li>
-                <a href="src/index#images">Images</a>
-              </li>
-            </ol>
-          </li>
-          <li>
-            <a href="src/index#miscellaneous">Miscellaneous</a>
-            <ol>
-              <li>
-                <a href="src/index#scroll-overflow">Scroll Overflow</a>
-              </li>
-              <li>
-                <a href="src/index#syntax-highlighting">Syntax Highlighting</a>
-              </li>
-            </ol>
-          </li>
+            );
+          })}
         </ol>
       </nav>
     </div>

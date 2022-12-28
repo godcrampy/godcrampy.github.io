@@ -1,11 +1,13 @@
 {
   "name": "godcrampy.github.io",
+  "homepage": "https://godcrampy.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "gh-pages": "^4.0.0",
     "highlight.js": "^11.7.0",
     "latex.css": "^1.8.0",
     "markdown-it": "^13.0.1",
@@ -27,7 +29,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier 'src/**/*.*' --write"
+    "format": "prettier 'src/**/*.*' --write",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
