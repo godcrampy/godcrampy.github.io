@@ -5,32 +5,32 @@
 Coercion is the process of conversion of one data type to another.
 
 ```javascript
-1 + '2'
+1 + "2";
 // 1 coerces to '1'
 // '12'
 
-1 + true
+1 + true;
 // true coerces to 1
 // 2
 
-1 + null
+1 + null;
 // null coerces to 0
 // 1
 
-1 + undefined
+1 + undefined;
 // undefined coerces to 0
 // 1
 
-'abc' + undefined
+"abc" + undefined;
 // undefined coerces to 'undefined'
 // 'abcundefined'
 
-1 < 2 < 3
+1 < 2 < 3;
 // => true < 3 (left to right associativity)
 // => 1 < 3 (coercion)
 // => true
 
-1 > 2 > 3
+1 > 2 > 3;
 // => false > 3
 // => 1 > 3
 // => false
@@ -39,11 +39,11 @@ Coercion is the process of conversion of one data type to another.
 JavaScript can give weird and unexpected results when comparing. Thus, it is better to use `===` instead of `==` for comparisons as `===` doesn't coerce.
 
 ```javascript
-1 == '1'
+1 == "1";
 // true
 // coercion
 
-1 === '1'
+1 === "1";
 // false
 ```
 
@@ -55,7 +55,7 @@ Here's how you can manually convert to a datatype:
 
 ```javascript
 const number = 42;
-const string = '42';
+const string = "42";
 
 Number(string);
 // Coerces to number
@@ -99,6 +99,6 @@ Boolean([]);
 Boolean("0");
 // true
 
-null == 0
+null == 0;
 // false
 ```
