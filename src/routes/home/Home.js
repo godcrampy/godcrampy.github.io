@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import essayConfigJson from "../../essay/index.json";
+import MenuBar from "../../components/MenuBar/MenuBar";
 
 function Home() {
   const [essayConfigs, updateEssayConfigs] = useState([]);
@@ -10,6 +11,7 @@ function Home() {
 
   return (
     <div data-testid="home" className="Home">
+      <MenuBar />
       <h1>Sahil Bondre</h1>
       <p className="author">Software Engineer</p>
       <div data-testid="abstract" className="abstract">

@@ -26,3 +26,15 @@ nav li:before {
 .table-of-contents li {
   display: block;
 }
+
+#menu-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+}

@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 import { MemoryRouter, BrowserRouter } from "react-router-dom";
+import essayConfigList from "./essay/index.json";
 
 test("renders abstract section", () => {
   render(<App />, { wrapper: BrowserRouter });
@@ -23,7 +24,7 @@ test("landing on a bad page", () => {
 });
 
 test("landing on a essay page", () => {
-  const route = "/essay/000-test";
+  const route = "/essay/001-es6-best-practices";
 
   render(
     <MemoryRouter initialEntries={[route]}>

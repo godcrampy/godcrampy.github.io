@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import MarkdownParser from "../../markdown/MarkdownParser";
 import hljs from "highlight.js";
+import MenuBar from "../../components/MenuBar/MenuBar";
 
 function Essay() {
   const navigate = useNavigate();
@@ -37,7 +38,9 @@ function Essay() {
 
   return (
     <div data-testid="essay" className="Essay">
+      <MenuBar />
       <h1>{config.title}</h1>
+
       <p className="author">
         {config.author} <br /> {config.date}
       </p>
@@ -50,6 +53,9 @@ function Essay() {
 
       <h2>Table of Contents</h2>
       <div dangerouslySetInnerHTML={{ __html: data }}></div>
+      <p>
+        <a href="#top">[Top]</a>
+      </p>
     </div>
   );
 }
