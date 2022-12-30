@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c9561e6e.css",
-    "main.js": "/static/js/main.486d9dd9.js",
+    "main.js": "/static/js/main.082d20a5.js",
     "static/media/Libertinus-semibold-italic.woff2": "/static/media/Libertinus-semibold-italic.02bb0b08425a842da81e.woff2",
     "static/media/Libertinus-italic.woff2": "/static/media/Libertinus-italic.14b5589e45197c291768.woff2",
     "static/media/LM-italic.ttf": "/static/media/LM-italic.c0c56f0dddca5dd537ac.ttf",
@@ -23,10 +23,10 @@
     "static/media/index.md": "/static/media/index.e90fc08ae1d93122c173.md",
     "index.html": "/index.html",
     "main.c9561e6e.css.map": "/static/css/main.c9561e6e.css.map",
-    "main.486d9dd9.js.map": "/static/js/main.486d9dd9.js.map"
+    "main.082d20a5.js.map": "/static/js/main.082d20a5.js.map"
   },
   "entrypoints": [
     "static/css/main.c9561e6e.css",
-    "static/js/main.486d9dd9.js"
+    "static/js/main.082d20a5.js"
   ]
 }
