@@ -9,10 +9,12 @@ test("json config is correct", () => {
     expect(config).toHaveProperty("date");
     expect(config).toHaveProperty("title");
     expect(config).toHaveProperty("abstract");
+    expect(config).toHaveProperty("collection");
     expect(typeof config.location).toBe("string");
     expect(typeof config.author).toBe("string");
     expect(typeof config.date).toBe("string");
     expect(typeof config.title).toBe("string");
     expect(typeof config.abstract).toBe("string");
+    expect(typeof config.collection).toBe("string");
   });
 });
