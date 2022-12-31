@@ -1,0 +1,40 @@
+.left {
+  text-align: left;
+}
+
+pre {
+  padding: 0 !important;
+}
+
+nav li:before {
+  content: counters(item, ".") ".";
+  counter-increment: item;
+  padding-right: 0.85rem;
+}
+
+.table-of-contents li:before {
+  content: counters(item, ".") ".";
+  counter-increment: item;
+  padding-right: 0.85rem;
+}
+
+.table-of-contents ol {
+  counter-reset: item;
+  padding-left: 2rem;
+}
+
+.table-of-contents li {
+  display: block;
+}
+
+#menu-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+}

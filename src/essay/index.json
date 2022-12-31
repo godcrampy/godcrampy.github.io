@@ -1,0 +1,50 @@
+[
+  {
+    "location": "essay/001-es6-best-practices",
+    "author": "Sahil Bondre",
+    "date": "Week 34, 24th August 2018",
+    "title": "ES6 for loops: Best Practices",
+    "collection": "Engineering",
+    "abstract": "For loops are common control flow statements used to iterate over range, sequential data types etc. The ES6 revision of JavaScript provides several new features making the language more powerful, crisp and elegant. Here's what I came across as the best practices for the \"for\" loop."
+  },
+  {
+    "location": "essay/002-coercion-in-javascript",
+    "author": "Sahil Bondre",
+    "date": "Week 34, 25th August 2019",
+    "title": "Coercion in JavaScript",
+    "collection": "Engineering",
+    "abstract": ""
+  },
+  {
+    "location": "essay/003-the-secret-of-hoisting",
+    "author": "Sahil Bondre",
+    "date": "Week 34, 26th August 2019",
+    "title": "The Secret of Hoisting in JavaScript",
+    "collection": "Engineering",
+    "abstract": "Hoisting is one of the most confused about concept of JavaScript. It's one of the things that makes people think JavaScript as a nonsensical language. But once you know what's happening under the hood, everything makes perfect sense."
+  },
+  {
+    "location": "essay/004-es6-arrow-functions",
+    "author": "Sahil Bondre",
+    "date": "Week 36, 4th September 2019",
+    "title": "ES6 Arrow Functions: All you need to know",
+    "collection": "Engineering",
+    "abstract": ""
+  },
+  {
+    "location": "essay/005-5-levels-of-developer-maturity",
+    "author": "Sahil Bondre",
+    "date": "Week 12, 21st March 2020",
+    "title": "The 5 Levels of Developer Maturity",
+    "collection": "Engineering",
+    "abstract": ""
+  },
+  {
+    "location": "essay/006-shell-script-crash-course",
+    "author": "Sahil Bondre",
+    "date": "Week 34, 21st August 2020",
+    "title": "The Missing Shell Scripting Crash Course",
+    "collection": "Engineering",
+    "abstract": ""
+  }
+]
