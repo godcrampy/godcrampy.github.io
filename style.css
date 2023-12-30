@@ -1,0 +1,24 @@
+body {
+  width: 100%;
+  font-family: 'Lato';
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+#container {
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* This centers the container */
+  padding: 20px; /* Add some padding to the container if desired */
+  box-sizing: border-box; /* This ensures that padding is included in the total width */
+}
+
+
+h1 {
+  font-family: 'Playfair Display';
+}
+
+
+a {
+  text-decoration: none;
+  color: #0066cc;
+}
